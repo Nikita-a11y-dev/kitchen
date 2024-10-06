@@ -1,0 +1,22 @@
+<svg width="160.000000" height="160.000000" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<filter id="filter_311_3102_dd" x="0.000000" y="0.000000" width="160.000000" height="160.000000" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+			<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+			<feMorphology radius="5" in="" result="BackgroundImageFix"/>
+			<feOffset dx="5" dy="5"/>
+			<feGaussianBlur stdDeviation="6.66667"/>
+			<feComposite in2="hardAlpha" operator="out" k2="-1" k3="1"/>
+			<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+			<feBlend mode="normal" in2="BackgroundImageFix" result="effect_dropShadow_1"/>
+			<feBlend mode="normal" in="SourceGraphic" in2="effect_dropShadow_1" result="shape"/>
+		</filter>
+	</defs>
+	<g filter="url(#filter_311_3102_dd)">
+		<circle id="Ellipse 32" cx="75.000000" cy="75.000000" r="55.000000" fill="#FFFFFF" fill-opacity="1.000000"/>
+	</g>
+	<path id="Vector" d="M69.86 84.26L101.88 52.69C102.82 51.76 104.35 51.76 105.29 52.69C106.23 53.62 106.23 55.12 105.29 56.05L71.56 89.3C70.62 90.23 69.1 90.23 68.16 89.3L53.7 75.05C52.76 74.12 52.76 72.62 53.7 71.69C54.64 70.76 56.17 70.76 57.11 71.69L69.86 84.26Z" fill="#FBD846" fill-opacity="1.000000" fill-rule="nonzero"/>
+</svg>
