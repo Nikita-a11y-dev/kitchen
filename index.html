@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="./css/media.css" />
   </head>
   <body>
+    <div class="wrapper"></div>
     <header class="header">
       <div class="container">
         <div class="header__row">
@@ -44,24 +45,14 @@
           <li class="nav__item"><a href="">Фотопечать</a></li>
           <li class="nav__item"><a href="">Готовые решения</a></li>
           <li class="nav__item"><a href="">Контакты</a></li>
-          <li><button class="nav__btn">Заказать звонок</button></li>
+          <li>
+            <a href="#popup" class="popup-links nav__btn">Заказать звонок</a>
+          </li>
         </ul>
       </div>
     </nav>
 
-    <section class="modal-first__success none">
-      <div class="modal-success">
-        <img src="./img/галочка.svg" alt="" />
-        <h1>Заявка отправлена!</h1>
-        <p>
-          Благодарим Вас! Наш специалист свяжется с вами по телефону в ближайшее
-          время для уточнения деталей.
-        </p>
-        <button class="modal-success__close">
-          <img src="./img/closr.svg" alt="" />
-        </button>
-      </div>
-    </section>
+    <section class="modal-first__success none"></section>
     <main class="">
       <section class="first-screen">
         <div class="container">
@@ -145,10 +136,12 @@
           <div class="popular-modal__wrapper">
             <div class="popular-modal__item">
               <div class="popular-modal__img">
-                <a href=""><img src="./img/Лофт-1.png" alt="" /></a>
+                <a href="#popup3" class="popup-links"
+                  ><img src="./img/Лофт-1.png" alt=""
+                /></a>
               </div>
               <div class="popular-modal__info">
-                <a href="">
+                <a>
                   Кухонный гарнитур “ЛОФТ”<br />
                   Длина 2 метра.
                 </a>
@@ -157,7 +150,19 @@
                   <p>14 900 ₽</p>
                 </span>
               </div>
-              <a class="popular-modal__plus" href="">+</a>
+              <a href="#popup3" class="popular-modal__plus popup-links" href=""
+                >+</a
+              >
+
+              <div id="popup3" class="popup">
+                <div class="popup__body">
+                  <div class="popup__content popular-modal__popup">
+                    <a href="#popup3" class="close__popup popular-modal__close"
+                      ><img src="./img/closr.svg" alt=""
+                    /></a>
+                  </div>
+                </div>
+              </div>
             </div>
 
             <div class="popular-modal__item">
@@ -351,7 +356,7 @@
                     class="choice__input"
                     placeholder="+7(_ _ _) _ _ _-_ _-_ _"
                     type="tel"
-                    id="tel1"
+                    id="tel"
                   />
                   <button class="choice__btn">Рассчитать стоимость</button>
                   <p>
@@ -440,11 +445,7 @@
           <div class="material__wrapper">
             <div class="material__item">
               <div class="material__item-up">
-                <img
-                  class="material__img"
-                  src="./img/kisspng-particle-boardplywood.png"
-                  alt="wood"
-                />
+                <img class="material__img" src="./img/LDSP.png" alt="wood" />
                 <h1 class="material__item-1">ЛДСП</h1>
                 <p>
                   - Хорошая устойчивость к температурным перепадам и высокой
@@ -466,22 +467,21 @@
                   его можно чистить различными химическими средствами.
                 </p>
               </div>
-              <div class="material__item-bottom">
+              <a
+                href="#popup_material-1"
+                class="material__item-bottom popup-links"
+              >
                 <button class="material__btn">Рассчитать стоимость</button>
-              </div>
+              </a>
             </div>
 
             <div class="material__item">
               <div class="material__item-up">
-                <img
-                  class="material__img"
-                  src="./img/kisspng-particle-boardplywood.png"
-                  alt="wood"
-                />
+                <img class="material__img" src="./img/MDF.png" alt="wood" />
                 <h1>Мдф</h1>
                 <span>
-                  - Широкие дизайнерские возможности. Чаще всего МДФ используют
-                  как основу, отделывая пластиком, акрилом, различными типами
+                  Чаще всего МДФ используют как основу, отделывая пластиком,
+                  акрилом, различными типами
                 </span>
                 <p class="material__p-secend">
                   пленок. Это позволяет создать яркие уникальные дизайны. Часто
@@ -498,18 +498,17 @@
                   требовательным.
                 </p>
               </div>
-              <div class="material__item-bottom">
+              <a
+                href="popup_material-2"
+                class="material__item-bottom popup-links"
+              >
                 <button class="material__btn">Рассчитать стоимость</button>
-              </div>
+              </a>
             </div>
 
             <div class="material__item">
               <div class="material__item-up">
-                <img
-                  class="material__img"
-                  src="./img/kisspng-particle-boardplywood.png"
-                  alt="wood"
-                />
+                <img class="material__img" src="./img/EMAL.png" alt="wood" />
                 <h1>Эмаль</h1>
                 <p>
                   Все больше у покупателей становятся популярными, кухни с
@@ -522,18 +521,17 @@
                   в определенных
                 </p>
               </div>
-              <div class="material__item-bottom">
+              <a
+                href="popup_material-3"
+                class="material__item-bottom popup-links"
+              >
                 <button class="material__btn">Рассчитать стоимость</button>
-              </div>
+              </a>
             </div>
 
             <div class="material__item">
               <div class="material__item-up">
-                <img
-                  class="material__img"
-                  src="./img/kisspng-particle-boardplywood.png"
-                  alt="wood"
-                />
+                <img class="material__img" src="./img/Blum.png" alt="wood" />
                 <h1 class="material__item-4">фурнитура blum</h1>
                 <p>
                   - Высококачественная австрийская фурнитура для современной
@@ -546,18 +544,17 @@
                 <p>- превращать «мертвые» зоны в полезные;</p>
                 <p>- реализовывать любые дизайнерские задумки.</p>
               </div>
-              <div class="material__item-bottom">
+              <a
+                href="popup_material-4"
+                class="material__item-bottom popup-links"
+              >
                 <button class="material__btn">Рассчитать стоимость</button>
-              </div>
+              </a>
             </div>
 
             <div class="material__item">
               <div class="material__item-up">
-                <img
-                  class="material__img"
-                  src="./img/kisspng-particle-boardplywood.png"
-                  alt="wood"
-                />
+                <img class="material__img" src="./img/hettich.png" alt="wood" />
                 <h1 class="material__item-5">фурнитура Hettich</h1>
                 <p>
                   – это германская фурнитура с идеальным сочетанием
@@ -570,18 +567,17 @@
                   для кухонной мебели
                 </p>
               </div>
-              <div class="material__item-bottom">
+              <a
+                href="popup_material-5"
+                class="material__item-bottom popup-links"
+              >
                 <button class="material__btn">Рассчитать стоимость</button>
-              </div>
+              </a>
             </div>
 
             <div class="material__item">
               <div class="material__item-up">
-                <img
-                  class="material__img"
-                  src="./img/kisspng-particle-boardplywood.png"
-                  alt="wood"
-                />
+                <img class="material__img" src="./img/Boyard.png" alt="wood" />
                 <h1 class="material__item-6">фурнитура BOYARD</h1>
                 <p>
                   Передовые технологические разработки, позволяющие выпускать
@@ -594,9 +590,12 @@
                   разнообразные по формам, размерам, типу покрытий и назначению.
                 </p>
               </div>
-              <div class="material__item-bottom">
+              <a
+                href="popup_material-6"
+                class="material__item-bottom popup-links"
+              >
                 <button class="material__btn">Рассчитать стоимость</button>
-              </div>
+              </a>
             </div>
           </div>
 
@@ -664,6 +663,240 @@
                 </p></span
               >
               <img src="./img/kitchen3.png" alt="" />
+            </div>
+
+            <div class="material__popup">
+              <div id="popup_material-1" class="popup">
+                <div class="popup__body">
+                  <div class="popup__content material__bg">
+                    <h1 class="title material__title-modal">
+                      Рассчитать стоимость
+                    </h1>
+                    <input
+                      placeholder="Имя"
+                      class="popup__btn material__input"
+                      type="text"
+                    />
+                    <input
+                      class="popup__btn material__input"
+                      placeholder="+7(_ _ _) _ _ _-_ _-_ _"
+                      type="tel"
+                      id="tel"
+                    />
+                    <span
+                      ><img src="./img/LDSP.png" alt="" />
+                      <p>Кухни из лдсп</p>
+                    </span>
+                    <a class="material__call popup-links" href="#popup2"
+                      >Позвоните мне</a
+                    >
+                    <p>
+                      Нажимая кнопку “Позвоните мне”, вы соглашаетесь с
+                      условиями Политики конфиденциальности
+                    </p>
+
+                    <a
+                      href="popup_material-1"
+                      class="close__popup material__close"
+                    >
+                      <img src="./img/closr.svg" alt=""
+                    /></a>
+                  </div>
+                </div>
+              </div>
+
+              <div id="popup_material-2" class="popup">
+                <div class="popup__body">
+                  <div class="popup__content material__bg">
+                    <h1 class="title material__title-modal">
+                      Рассчитать стоимость
+                    </h1>
+                    <input
+                      placeholder="Имя"
+                      class="popup__btn material__input"
+                      type="text"
+                    />
+                    <input
+                      class="popup__btn material__input"
+                      placeholder="+7(_ _ _) _ _ _-_ _-_ _"
+                      type="tel"
+                      id="tel"
+                    />
+                    <span
+                      ><img src="./img/MDF.png" alt="" />
+                      <p>Кухни из мдф</p>
+                    </span>
+                    <a class="material__call popup-links" href="#popup2"
+                      >Позвоните мне</a
+                    >
+                    <p>
+                      Нажимая кнопку “Позвоните мне”, вы соглашаетесь с
+                      условиями Политики конфиденциальности
+                    </p>
+                    <a
+                      href="popup_material-1"
+                      class="close__popup material__close"
+                    >
+                      <img src="./img/closr.svg" alt=""
+                    /></a>
+                  </div>
+                </div>
+              </div>
+
+              <div id="popup_material-3" class="popup">
+                <div class="popup__body">
+                  <div class="popup__content material__bg">
+                    <h1 class="title material__title-modal">
+                      Рассчитать стоимость
+                    </h1>
+                    <input
+                      placeholder="Имя"
+                      class="popup__btn material__input"
+                      type="text"
+                    />
+                    <input
+                      class="popup__btn material__input"
+                      placeholder="+7(_ _ _) _ _ _-_ _-_ _"
+                      type="tel"
+                      id="tel"
+                    />
+                    <span
+                      ><img src="./img/EMAL.png" alt="" />
+                      <p>Кухни из Эмаль</p>
+                    </span>
+                    <a class="material__call popup-links" href="#popup2"
+                      >Позвоните мне</a
+                    >
+                    <p>
+                      Нажимая кнопку “Позвоните мне”, вы соглашаетесь с
+                      условиями Политики конфиденциальности
+                    </p>
+                    <a
+                      href="popup_material-1"
+                      class="close__popup material__close"
+                    >
+                      <img src="./img/closr.svg" alt=""
+                    /></a>
+                  </div>
+                </div>
+              </div>
+
+              <div id="popup_material-4" class="popup">
+                <div class="popup__body">
+                  <div class="popup__content material__bg">
+                    <h1 class="title material__title-modal">
+                      Рассчитать стоимость
+                    </h1>
+                    <input
+                      placeholder="Имя"
+                      class="popup__btn material__input"
+                      type="text"
+                    />
+                    <input
+                      class="popup__btn material__input"
+                      placeholder="+7(_ _ _) _ _ _-_ _-_ _"
+                      type="tel"
+                      id="tel"
+                    />
+                    <span
+                      ><img src="./img/Blum.png" id="material__down" />
+                      <p>Кухни с фурнитуой blum</p>
+                    </span>
+                    <a class="material__call popup-links" href="#popup2"
+                      >Позвоните мне</a
+                    >
+                    <p>
+                      Нажимая кнопку “Позвоните мне”, вы соглашаетесь с
+                      условиями Политики конфиденциальности
+                    </p>
+
+                    <a
+                      href="popup_material-1"
+                      class="close__popup material__close"
+                    >
+                      <img src="./img/closr.svg" alt=""
+                    /></a>
+                  </div>
+                </div>
+              </div>
+
+              <div id="popup_material-5" class="popup">
+                <div class="popup__body">
+                  <div class="popup__content material__bg">
+                    <h1 class="title material__title-modal">
+                      Рассчитать стоимость
+                    </h1>
+                    <input
+                      placeholder="Имя"
+                      class="popup__btn material__input"
+                      type="text"
+                    />
+                    <input
+                      class="popup__btn material__input"
+                      placeholder="+7(_ _ _) _ _ _-_ _-_ _"
+                      type="tel"
+                      id="tel"
+                    />
+                    <span
+                      ><img src="./img/hettich.png" id="material__down-1" />
+                      <p>Кухни с фурнитуой hettich</p>
+                    </span>
+                    <a class="material__call popup-links" href="#popup2"
+                      >Позвоните мне</a
+                    >
+                    <p>
+                      Нажимая кнопку “Позвоните мне”, вы соглашаетесь с
+                      условиями Политики конфиденциальности
+                    </p>
+
+                    <a
+                      href="popup_material-1"
+                      class="close__popup material__close"
+                    >
+                      <img src="./img/closr.svg" alt=""
+                    /></a>
+                  </div>
+                </div>
+              </div>
+
+              <div id="popup_material-6" class="popup">
+                <div class="popup__body">
+                  <div class="popup__content material__bg">
+                    <h1 class="title material__title-modal">
+                      Рассчитать стоимость
+                    </h1>
+                    <input
+                      placeholder="Имя"
+                      class="popup__btn material__input"
+                      type="text"
+                    />
+                    <input
+                      class="popup__btn material__input"
+                      placeholder="+7(_ _ _) _ _ _-_ _-_ _"
+                      type="tel"
+                      id="tel"
+                    />
+                    <span
+                      ><img src="./img/Boyard.png" id="material__down" />
+                      <p>Кухни с фурнитуой boyard</p>
+                    </span>
+                    <a class="material__call popup-links" href="#popup2"
+                      >Позвоните мне</a
+                    >
+                    <p>
+                      Нажимая кнопку “Позвоните мне”, вы соглашаетесь с
+                      условиями Политики конфиденциальности
+                    </p>
+
+                    <a
+                      href="popup_material-1"
+                      class="close__popup material__close"
+                    >
+                      <img src="./img/closr.svg" alt=""
+                    /></a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -811,33 +1044,51 @@
         </div>
       </div>
     </footer>
-    <div class="background__modal-window"></div>
-    <section class="call">
-      <div class="call__card">
-        <h1>Заказать звонок</h1>
-        <p>
-          <img src="./img/phone2.svg" alt="" />
-          Вы можете задать любой интересующий Вас вопрос, уточнить цены, вызвать
-          замерщика, проконсультироваться о продукции.
-        </p>
-        <form action="">
-          <input placeholder="Имя" ="text" name="" id="" />
-          <input
-            placeholder="+7(_ _ _) _ _ _-_ _ - _ _ "
-            type="text"
-            id="tel3"
-          />
-          <button>Позвоните мне</button>
-        </form>
-        <span
-          >Нажимая кнопку “Позвоните мне”, вы соглашаетесь с условиями Политики
-          конфиденциальности</span
-        >
-        <div class="call__close">
-          <img src="./img/closr.svg" alt="" />
+
+    <div class="popup" id="popup">
+      <div class="popup__body">
+        <div class="popup__content call__card">
+          <h1>Заказать звонок</h1>
+          <p>
+            <img src="./img/phone2.svg" alt="" />
+            Вы можете задать любой интересующий Вас вопрос, уточнить цены,
+            вызвать замерщика, проконсультироваться о продукции.
+          </p>
+          <form action="">
+            <input placeholder="Имя" type="text" name="" id="" />
+            <input
+              placeholder="+7(_ _ _) _ _ _-_ _ - _ _ "
+              type="text"
+              id="tel"
+            />
+            <a href="#popup2" class="btn__modal popup-links">Позвоните мне</a>
+          </form>
+          <span
+            >Нажимая кнопку “Позвоните мне”, вы соглашаетесь с условиями
+            Политики конфиденциальности</span
+          >
+          <a href="#popup" class="close__popup call__close">
+            <img src="./img/closr.svg" alt="" />
+          </a>
         </div>
       </div>
-    </section>
+    </div>
+
+    <div id="popup2" class="popup">
+      <div class="popup__body">
+        <div class="popup__content modal-success">
+          <img src="./img/галочка.svg" alt="" />
+          <h1>Заявка отправлена!</h1>
+          <p>
+            Благодарим Вас! Наш специалист свяжется с вами по телефону в
+            ближайшее время для уточнения деталей.
+          </p>
+          <a href="#popup2" class="close__popup success__btn"
+            ><img src="./img/closr.svg" alt=""
+          /></a>
+        </div>
+      </div>
+    </div>
     <script src="https://unpkg.com/imask"></script>
     <script src="./Js/mask-phone.js"></script>
     <script src="./Js/modal-first.js"></script>
