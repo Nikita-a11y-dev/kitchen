@@ -15,8 +15,8 @@
     <link rel="stylesheet" href="./css/media.css" />
   </head>
   <body>
-    <div class="wrapper"></div>
-    <header class="header">
+    <div class="wrapper "></div>
+    <header class="header ">
       <div class="container">
         <div class="header__row">
           <span class="header__text">
@@ -33,7 +33,7 @@
         </div>
       </div>
     </header>
-    <nav class="nav">
+    <nav class="nav ">
       <div class="container">
         <ul class="nav__row">
           <li class="nav__iten">
@@ -51,10 +51,8 @@
         </ul>
       </div>
     </nav>
-
-    <section class="modal-first__success none"></section>
     <main class="">
-      <section class="first-screen">
+      <section class="first-screen ">
         <div class="container">
           <div class="first-screen__blok">
             <h1>
@@ -114,7 +112,7 @@
         </div>
       </section>
 
-      <section class="designer">
+      <section class="designer ">
         <div class="containr">
           <div class="title designer__title">
             <span class="yellow__text">ОНЛАЙН</span> КОНСТРУКТОР КУХНИ
@@ -130,7 +128,7 @@
         </div>
       </section>
 
-      <section class="popular-modal">
+      <section class="popular-modal ">
         <div class="container">
           <div class="popular-modal__title title">популярные модели</div>
           <div class="popular-modal__wrapper">
@@ -157,20 +155,95 @@
               <div id="popup3" class="popup">
                 <div class="popup__body">
                   <div class="popup__content popular-modal__popup">
-                    <a href="#popup3" class="close__popup popular-modal__close"
-                      ><img src="./img/closr.svg" alt=""
-                    /></a>
+                    <div class="modal__left">
+                      <img src="./img/Лофт-1.png" alt="" />
+                    </div>
+                    <div class="modal__right">
+                      <div class="modal__up">
+                      <h1 class="modal__right-title">
+                        Кухонный гарнитур “Шимо”. Длина 1.2 метра.
+                      </h1>
+
+                      <div class="modal__tabs">
+                        <ul class="modal__row">
+                          <li data-tab="tab-modal-1" class="tab__title">
+                            Описание
+                          </li>
+                          <li data-tab="tab-modal-2" class="tab__title">
+                            Характеристики
+                          </li>
+                        </ul>
+
+                        <div class="modal-tabs-wrapper">
+                          <div id="tab-modal-1" class="tab__content hidden-tab-content">
+                            <p>Компактная длина кухонного гарнитура “Шимо”, составляющая всего лишь 1,2 метра, позволит расположить его даже в совсем крошечных помещениях. Случается, что для кухни нет отдельного помещения. Она бывает совмещена со столовой или гостиной. Данный комплект – именно тот необходимый минимум мебели, который нужен. Он достаточно вместительный и очень практичный. Нейтральная расцветка фасадов и корпуса идеально сочетается с любой окружающей обстановкой. Два верхних шкафа и две нижние тумбы, оборудованные широкими полками, составляют готовый набор.</p>
+                          </div>
+                          <div id="tab-modal-2" class="tab__content hidden-tab-content">
+                            <p><p>Материал корпуса: ЛДСП, 
+                              цвет корпуса: БЕЛЫЙ.
+                              Материал фасадов: ЛДСП, 
+                              цвет фасадов: Шимо тмный/шимо светлый.
+                              Длина кухонного гарнитура 1.2 метра</p><br>
+                              
+                              <p>Кухня включает в себя:
+                              — Стол на 600 мм, со столешницей - 2 шт.
+                              — Шкаф верхний на 600 мм (с полкой) 2 шт.</p><br>
+                              
+                              <p>Ножки-опоры регулируемые, пластиковые, цвет – серебро. Ручки – пластик. Мойка в комплектацию не входит! Товар доставляется в упаковке, схема сборки прилагается!</p></p>
+                              </p>
+                          </div>
+                          </div>
+                        </div>
+                      </div>
+
+                         <div class="modal__down">
+                          <div class="modal__price">
+                            <span>75 620₽</span>
+                            <span>69 620₽</span>
+                          </div>
+                          <a href="popup-link-1" class="popup-links modal__btn ">Отставить заявку</a>
+                         </div>
+                      </div>
+                      <a href="#popup3" class="close__popup popular-modal__close"><img src="./img/closr.svg" alt=""/></a>
+                    </div>
+                    
                   </div>
                 </div>
               </div>
-            </div>
 
-            <div class="popular-modal__item">
+              <div id="popup-link-1" class="popup">
+                <div class="popup__body">
+                  <div class="popup__content application ">
+                    <h1>Оставить заявку</h1>
+                    <span>
+                      <div class="application__left" ><img src="./img/kitchen-popup-1.png" alt=""></div>
+                      <div class="application__right">
+                        <p>Кухонный гарнитур “Шимо”. Длина 1.2 метра.</p>
+                        <p>75 620₽</p>
+                        <p>69 620₽</p>
+                      </div>
+                    </span>
+                    <form action="">
+                      <input placeholder="Имя" type="text">
+                      <input placeholder="+7(_ _ _) _ _ _-_ _-_ _"
+                      type="tel"
+                      id="tel">
+                      <button>Оставить заявку</button>
+                    </form>
+                    <p class="p-bottom">Нажимая кнопку “Оставить заявку”, вы соглашаетесь с условиями 
+                      Политики конфиденциальности</p>
+
+                      <a class="popup-link-1-close close__popup" href="popup-link-1"><img src="./img/closr.svg" alt=""></a>
+                  </div>
+                </div>
+              </div>
+
+            <div class="popular-modal__item">   
               <div class="popular-modal__img">
-                <a href=""><img src="./img/Лофт-1.png" alt="" /></a>
+                <a href="popup-modal-2" class="popup-links" ><img src="./img/Orhidea.png" alt="" /></a>
               </div>
               <div class="popular-modal__info">
-                <a href="">
+                <a>
                   Кухонный гарнитур “ЛОФТ”<br />
                   Длина 2 метра.
                 </a>
@@ -179,15 +252,100 @@
                   <p>14 900 ₽</p>
                 </span>
               </div>
-              <a class="popular-modal__plus" href="">+</a>
+              <a href="popup-modal-2" class="popular-modal__plus popup-links">+</a>
+
+              <div id="popup-modal-2" class="popup">
+                <div class="popup__body">
+                  <div class="popup__content popular-modal__popup">
+                    <div class="modal__left">
+                      <img src="./img/Orhidea.png" alt="" />
+                    </div>
+                    <div class="modal__right">
+                      <div class="modal__up">
+                      <h1 class="modal__right-title">
+                        Кухонный гарнитур “Шимо”. Длина 1.2 метра.
+                      </h1>
+
+                      <div class="modal__tabs">
+                        <ul class="modal__row">
+                          <li data-tab="tab-modal-3" class="tab__title active-tab">
+                            Описание
+                          </li>
+                          <li data-tab="tab-modal-4" class="tab__title">
+                            Характеристики
+                          </li>
+                        </ul>
+                        
+                        <div class="modal-tabs-wrapper">
+                          <div id="tab-modal-3" class="tab__content active-tab">
+                            <p>Компактная длина кухонного гарнитура “Шимо”, составляющая всего лишь 1,2 метра, позволит расположить его даже в совсем крошечных помещениях. Случается, что для кухни нет отдельного помещения. Она бывает совмещена со столовой или гостиной. Данный комплект – именно тот необходимый минимум мебели, который нужен. Он достаточно вместительный и очень практичный. Нейтральная расцветка фасадов и корпуса идеально сочетается с любой окружающей обстановкой. Два верхних шкафа и две нижние тумбы, оборудованные широкими полками, составляют готовый набор.</p>
+                          </div>
+                          <div id="tab-modal-4" class="tab__content hidden-tab-content">
+                            <p><p>Материал корпуса: ЛДСП, 
+                              цвет корпуса: БЕЛЫЙ.
+                              Материал фасадов: ЛДСП, 
+                              цвет фасадов: Шимо тмный/шимо светлый.
+                              Длина кухонного гарнитура 1.2 метра</p><br>
+                              
+                              <p>Кухня включает в себя:
+                              — Стол на 600 мм, со столешницей - 2 шт.
+                              — Шкаф верхний на 600 мм (с полкой) 2 шт.</p><br>
+                              
+                              <p>Ножки-опоры регулируемые, пластиковые, цвет – серебро. Ручки – пластик. Мойка в комплектацию не входит! Товар доставляется в упаковке, схема сборки прилагается!</p></p>
+                              </p>
+                          </div>
+                          </div>
+                        </div>
+                      </div>
+
+                         <div class="modal__down">
+                          <div class="modal__price">
+                            <span>75 620₽</span>
+                            <span>69 620₽</span>
+                          </div>
+                          <a href="popup-link-2" class="popup-links modal__btn ">Отставить заявку</a>
+                         </div>
+                      </div>
+                      <a href="#popup-modal-2" class="close__popup popular-modal__close"><img src="./img/closr.svg" alt=""/></a>
+                    </div>
+                    
+                  </div>
+                </div>
+
+                <div id="popup-link-2" class="popup">
+                  <div class="popup__body">
+                    <div class="popup__content application ">
+                      <h1>Оставить заявку</h1>
+                      <span>
+                        <div class="application__left" ><img src="./img/kitchen-popup-1.png" alt=""></div>
+                        <div class="application__right">
+                          <p>Кухонный гарнитур “Шимо”. Длина 1.2 метра.</p>
+                          <p>75 620₽</p>
+                          <p>69 620₽</p>
+                        </div>
+                      </span>
+                      <form action="">
+                        <input placeholder="Имя" type="text">
+                        <input placeholder="+7(_ _ _) _ _ _-_ _-_ _"
+                        type="tel"
+                        id="tel">
+                        <button>Оставить заявку</button>
+                      </form>
+                      <p class="p-bottom">Нажимая кнопку “Оставить заявку”, вы соглашаетесь с условиями 
+                        Политики конфиденциальности</p>
+  
+                        <a class="popup-link-1-close close__popup" href="popup-link-2"><img src="./img/closr.svg" alt=""></a>
+                    </div>
+                  </div>
+                </div>
             </div>
 
             <div class="popular-modal__item">
               <div class="popular-modal__img">
-                <a href=""><img src="./img/Лофт-1.png" alt="" /></a>
+                <a href="popup-modal-3" class="popup-links" ><img src="./img/gallery-img-2razdel-5.jpg" alt="" /></a>
               </div>
               <div class="popular-modal__info">
-                <a href="">
+                <a>
                   Кухонный гарнитур “ЛОФТ”<br />
                   Длина 2 метра.
                 </a>
@@ -196,15 +354,103 @@
                   <p>14 900 ₽</p>
                 </span>
               </div>
-              <a class="popular-modal__plus" href="">+</a>
+              <a href="popup-modal-3" class="popular-modal__plus popup-links" href="">+</a>
+
+              <div id="popup-modal-3" class="popup">
+                <div class="popup__body">
+                  <div class="popup__content popular-modal__popup">
+                    <div class="modal__left">
+                      <img src="./img/gallery-img-2razdel-5.jpg" alt="" />
+                    </div>
+                    <div class="modal__right">
+                      <div class="modal__up">
+                      <h1 class="modal__right-title">
+                        Кухонный гарнитур “Шимо”. Длина 1.2 метра.
+                      </h1>
+
+                      <div class="modal__tabs">
+                        <ul class="modal__row">
+                          <li data-tab="tab-modal-5" class="tab__title active-tab">
+                            Описание
+                          </li>
+                          <li data-tab="tab-modal-6" class="tab__title">
+                            Характеристики
+                          </li>
+                        </ul>
+
+                        <div class="modal-tabs-wrapper">
+                          <div id="tab-modal-5" class="tab__content active-tab">
+                            <p>Компактная длина кухонного гарнитура “Шимо”, составляющая всего лишь 1,2 метра, позволит расположить его даже в совсем крошечных помещениях. Случается, что для кухни нет отдельного помещения. Она бывает совмещена со столовой или гостиной. Данный комплект – именно тот необходимый минимум мебели, который нужен. Он достаточно вместительный и очень практичный. Нейтральная расцветка фасадов и корпуса идеально сочетается с любой окружающей обстановкой. Два верхних шкафа и две нижние тумбы, оборудованные широкими полками, составляют готовый набор.</p>
+                          </div>
+                          <div id="tab-modal-6" class="tab__content hidden-tab-content">
+                            <p><p>Материал корпуса: ЛДСП, 
+                              цвет корпуса: БЕЛЫЙ.
+                              Материал фасадов: ЛДСП, 
+                              цвет фасадов: Шимо тмный/шимо светлый.
+                              Длина кухонного гарнитура 1.2 метра</p><br>
+                              
+                              <p>Кухня включает в себя:
+                              — Стол на 600 мм, со столешницей - 2 шт.
+                              — Шкаф верхний на 600 мм (с полкой) 2 шт.</p><br>
+                              
+                              <p>Ножки-опоры регулируемые, пластиковые, цвет – серебро. Ручки – пластик. Мойка в комплектацию не входит! Товар доставляется в упаковке, схема сборки прилагается!</p></p>
+                            
+                            </p>
+                          </div>
+                          </div>
+                        </div>
+                      </div>
+
+                         <div class="modal__down">
+                          <div class="modal__price">
+                            <span>75 620₽</span>
+                            <span>69 620₽</span>
+                          </div>
+                          <a href="popup-link-3" class="popup-links modal__btn ">Отставить заявку</a>
+                         </div>
+                      </div>
+                      <a href="#popup-modal-3" class="close__popup popular-modal__close"><img src="./img/closr.svg" alt=""/></a>
+                    </div>
+                    
+                  </div>
+                </div>
+
+                <div id="popup-link-3" class="popup">
+                  <div class="popup__body">
+                    <div class="popup__content application ">
+                      <h1>Оставить заявку</h1>
+                      <span>
+                        <div class="application__left" ><img src="./img/kitchen-popup-1.png" alt=""></div>
+                        <div class="application__right">
+                          <p>Кухонный гарнитур “Шимо”. Длина 1.2 метра.</p>
+                          <p>75 620₽</p>
+                          <p>69 620₽</p>
+                        </div>
+                      </span>
+                      <form action="">
+                        <input placeholder="Имя" type="text">
+                        <input placeholder="+7(_ _ _) _ _ _-_ _-_ _"
+                        type="tel"
+                        id="tel">
+                        <button>Оставить заявку</button>
+                      </form>
+                      <p class="p-bottom">Нажимая кнопку “Оставить заявку”, вы соглашаетесь с условиями 
+                        Политики конфиденциальности</p>
+  
+                        <a class="popup-link-1-close close__popup" href="popup-link-3"><img src="./img/closr.svg" alt=""></a>
+                    </div>
+                  </div>
+                </div>
+                
+
             </div>
 
             <div class="popular-modal__item">
               <div class="popular-modal__img">
-                <a href=""><img src="./img/Лофт-1.png" alt="" /></a>
+                <a href="popup-modal-4" class="popup-links" ><img src="./img/gallery-img-4razdel-3.jpg" alt="" /></a>
               </div>
               <div class="popular-modal__info">
-                <a href="">
+                <a>
                   Кухонный гарнитур “ЛОФТ”<br />
                   Длина 2 метра.
                 </a>
@@ -213,15 +459,99 @@
                   <p>14 900 ₽</p>
                 </span>
               </div>
-              <a class="popular-modal__plus" href="">+</a>
+              <a href="popup-modal-4" class="popular-modal__plus popup-links" href="">+</a>
+
+              <div id="popup-modal-4" class="popup">
+                <div class="popup__body">
+                  <div class="popup__content popular-modal__popup">
+                    <div class="modal__left">
+                      <img src="./img/gallery-img-4razdel-3.jpg" alt="" />
+                    </div>
+                    <div class="modal__right">
+                      <div class="modal__up">
+                      <h1 class="modal__right-title">
+                        Кухонный гарнитур “Шимо”. Длина 1.2 метра.
+                      </h1>
+
+                      <div class="modal__tabs">
+                        <ul class="modal__row">
+                          <li data-tab="tab-modal-7" class="tab__title active-tab">
+                            Описание
+                          </li>
+                          <li data-tab="tab-modal-8" class="tab__title">
+                            Характеристики
+                          </li>
+                        </ul>
+
+                        <div class="modal-tabs-wrapper">
+                          <div id="tab-modal-7" class="tab__content active-tab">
+                            <p>Компактная длина кухонного гарнитура “Шимо”, составляющая всего лишь 1,2 метра, позволит расположить его даже в совсем крошечных помещениях. Случается, что для кухни нет отдельного помещения. Она бывает совмещена со столовой или гостиной. Данный комплект – именно тот необходимый минимум мебели, который нужен. Он достаточно вместительный и очень практичный. Нейтральная расцветка фасадов и корпуса идеально сочетается с любой окружающей обстановкой. Два верхних шкафа и две нижние тумбы, оборудованные широкими полками, составляют готовый набор.</p>
+                          </div>
+                          <div id="tab-modal-8" class="tab__content hidden-tab-content">
+                            <p><p>Материал корпуса: ЛДСП, 
+                              цвет корпуса: БЕЛЫЙ.
+                              Материал фасадов: ЛДСП, 
+                              цвет фасадов: Шимо тмный/шимо светлый.
+                              Длина кухонного гарнитура 1.2 метра</p><br>
+                              
+                              <p>Кухня включает в себя:
+                              — Стол на 600 мм, со столешницей - 2 шт.
+                              — Шкаф верхний на 600 мм (с полкой) 2 шт.</p><br>
+                              
+                              <p>Ножки-опоры регулируемые, пластиковые, цвет – серебро. Ручки – пластик. Мойка в комплектацию не входит! Товар доставляется в упаковке, схема сборки прилагается!</p></p>
+                              </p>
+                          </div>
+                          </div>
+                        </div>
+                      </div>
+
+                         <div class="modal__down">
+                          <div class="modal__price">
+                            <span>75 620₽</span>
+                            <span>69 620₽</span>
+                          </div>
+                          <a href="popup-link-4" class="popup-links modal__btn ">Отставить заявку</a>
+                         </div>
+                      </div>
+                      <a href="#popup-modal-4" class="close__popup popular-modal__close"><img src="./img/closr.svg" alt=""/></a>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="popup-link-4" class="popup">
+                  <div class="popup__body">
+                    <div class="popup__content application ">
+                      <h1>Оставить заявку</h1>
+                      <span>
+                        <div class="application__left" ><img src="./img/kitchen-popup-1.png" alt=""></div>
+                        <div class="application__right">
+                          <p>Кухонный гарнитур “Шимо”. Длина 1.2 метра.</p>
+                          <p>75 620₽</p>
+                          <p>69 620₽</p>
+                        </div>
+                      </span>
+                      <form action="">
+                        <input placeholder="Имя" type="text">
+                        <input placeholder="+7(_ _ _) _ _ _-_ _-_ _"
+                        type="tel"
+                        id="tel">
+                        <button>Оставить заявку</button>
+                      </form>
+                      <p class="p-bottom">Нажимая кнопку “Оставить заявку”, вы соглашаетесь с условиями 
+                        Политики конфиденциальности</p>
+  
+                        <a class="popup-link-1-close close__popup" href="popup-link-4"><img src="./img/closr.svg" alt=""></a>
+                    </div>
+                  </div>
+                </div>
             </div>
 
             <div class="popular-modal__item">
               <div class="popular-modal__img">
-                <a href=""><img src="./img/Лофт-1.png" alt="" /></a>
+                <a href="popup-modal-5" class="popup-links" ><img src="./img/gallery-img4.png" alt="" /></a>
               </div>
               <div class="popular-modal__info">
-                <a href="">
+                <a>
                   Кухонный гарнитур “ЛОФТ”<br />
                   Длина 2 метра.
                 </a>
@@ -230,15 +560,100 @@
                   <p>14 900 ₽</p>
                 </span>
               </div>
-              <a class="popular-modal__plus" href="">+</a>
+              <a href="popup-modal-5" class="popular-modal__plus popup-links" href="">+</a>
+
+              <div id="popup-modal-5" class="popup">
+                <div class="popup__body">
+                  <div class="popup__content popular-modal__popup">
+                    <div class="modal__left">
+                      <img src="./img/gallery-img4.png" alt="" />
+                    </div>
+                    <div class="modal__right">
+                      <div class="modal__up">
+                      <h1 class="modal__right-title">
+                        Кухонный гарнитур “Шимо”. Длина 1.2 метра.
+                      </h1>
+
+                      <div class="modal__tabs">
+                        <ul class="modal__row">
+                          <li data-tab="tab-modal-9" class="tab__title active-tab">
+                            Описание
+                          </li>
+                          <li data-tab="tab-modal-10" class="tab__title">
+                            Характеристики
+                          </li>
+                        </ul>
+
+                        <div class="modal-tabs-wrapper">
+                          <div id="tab-modal-9" class="tab__content active-tab">
+                            <p>Компактная длина кухонного гарнитура “Шимо”, составляющая всего лишь 1,2 метра, позволит расположить его даже в совсем крошечных помещениях. Случается, что для кухни нет отдельного помещения. Она бывает совмещена со столовой или гостиной. Данный комплект – именно тот необходимый минимум мебели, который нужен. Он достаточно вместительный и очень практичный. Нейтральная расцветка фасадов и корпуса идеально сочетается с любой окружающей обстановкой. Два верхних шкафа и две нижние тумбы, оборудованные широкими полками, составляют готовый набор.</p>
+                          </div>
+                          <div id="tab-modal-10" class="tab__content hidden-tab-content">
+                            <p><p>Материал корпуса: ЛДСП, 
+                              цвет корпуса: БЕЛЫЙ.
+                              Материал фасадов: ЛДСП, 
+                              цвет фасадов: Шимо тмный/шимо светлый.
+                              Длина кухонного гарнитура 1.2 метра</p><br>
+                              
+                              <p>Кухня включает в себя:
+                              — Стол на 600 мм, со столешницей - 2 шт.
+                              — Шкаф верхний на 600 мм (с полкой) 2 шт.</p><br>
+                              
+                              <p>Ножки-опоры регулируемые, пластиковые, цвет – серебро. Ручки – пластик. Мойка в комплектацию не входит! Товар доставляется в упаковке, схема сборки прилагается!</p></p>
+                              </p>
+                          </div>
+                          </div>
+                        </div>
+                      </div>
+
+                         <div class="modal__down">
+                          <div class="modal__price">
+                            <span>75 620₽</span>
+                            <span>69 620₽</span>
+                          </div>
+                          <a href="popup-link-5" class="popup-links modal__btn ">Отставить заявку</a>
+                         </div>
+                      </div>
+                      <a href="#popup-modal-5" class="close__popup popular-modal__close"><img src="./img/closr.svg" alt=""/></a>
+                    </div>
+
+                    
+                  </div>
+                </div>
+                <div id="popup-link-5" class="popup">
+                  <div class="popup__body">
+                    <div class="popup__content application ">
+                      <h1>Оставить заявку</h1>
+                      <span>
+                        <div class="application__left" ><img src="./img/kitchen-popup-1.png" alt=""></div>
+                        <div class="application__right">
+                          <p>Кухонный гарнитур “Шимо”. Длина 1.2 метра.</p>
+                          <p>75 620₽</p>
+                          <p>69 620₽</p>
+                        </div>
+                      </span>
+                      <form action="">
+                        <input placeholder="Имя" type="text">
+                        <input placeholder="+7(_ _ _) _ _ _-_ _-_ _"
+                        type="tel"
+                        id="tel">
+                        <button>Оставить заявку</button>
+                      </form>
+                      <p class="p-bottom">Нажимая кнопку “Оставить заявку”, вы соглашаетесь с условиями 
+                        Политики конфиденциальности</p>
+  
+                        <a class="popup-link-1-close close__popup" href="popup-link-5"><img src="./img/closr.svg" alt=""></a>
+                    </div>
+                  </div>
+                </div>
             </div>
 
             <div class="popular-modal__item">
               <div class="popular-modal__img">
-                <a href=""><img src="./img/Лофт-1.png" alt="" /></a>
+                <a href="popup-modal-6" class="popup-links" ><img src="./img/Red_Strawbery.png" alt="" /></a>
               </div>
               <div class="popular-modal__info">
-                <a href="">
+                <a>
                   Кухонный гарнитур “ЛОФТ”<br />
                   Длина 2 метра.
                 </a>
@@ -247,8 +662,94 @@
                   <p>14 900 ₽</p>
                 </span>
               </div>
-              <a class="popular-modal__plus" href="">+</a>
+              <a href="popup-modal-6" class="popular-modal__plus popup-links" href="">+</a>
+
+              <div id="popup-modal-6" class="popup">
+                <div class="popup__body">
+                  <div class="popup__content popular-modal__popup">
+                    <div class="modal__left">
+                      <img src="./img/Red_Strawbery.png" alt="" />
+                    </div>
+                    <div class="modal__right">
+                      <div class="modal__up">
+                      <h1 class="modal__right-title">
+                        Кухонный гарнитур “Шимо”. Длина 1.2 метра.
+                      </h1>
+
+                      <div class="modal__tabs">
+                        <ul class="modal__row">
+                          <li data-tab="tab-modal-11" class="tab__title active-tab">
+                            Описание
+                          </li>
+                          <li data-tab="tab-modal-12" class="tab__title">
+                            Характеристики
+                          </li>
+                        </ul>
+
+                        <div class="modal-tabs-wrapper">
+                          <div id="tab-modal-11" class="tab__content active-tab">
+                            <p>Компактная длина кухонного гарнитура “Шимо”, составляющая всего лишь 1,2 метра, позволит расположить его даже в совсем крошечных помещениях. Случается, что для кухни нет отдельного помещения. Она бывает совмещена со столовой или гостиной. Данный комплект – именно тот необходимый минимум мебели, который нужен. Он достаточно вместительный и очень практичный. Нейтральная расцветка фасадов и корпуса идеально сочетается с любой окружающей обстановкой. Два верхних шкафа и две нижние тумбы, оборудованные широкими полками, составляют готовый набор.</p>
+                          </div>
+                          <div id="tab-modal-12" class="tab__content hidden-tab-content">
+                            <p><p>Материал корпуса: ЛДСП, 
+                              цвет корпуса: БЕЛЫЙ.
+                              Материал фасадов: ЛДСП, 
+                              цвет фасадов: Шимо тмный/шимо светлый.
+                              Длина кухонного гарнитура 1.2 метра</p><br>
+                              
+                              <p>Кухня включает в себя:
+                              — Стол на 600 мм, со столешницей - 2 шт.
+                              — Шкаф верхний на 600 мм (с полкой) 2 шт.</p><br>
+                              
+                              <p>Ножки-опоры регулируемые, пластиковые, цвет – серебро. Ручки – пластик. Мойка в комплектацию не входит! Товар доставляется в упаковке, схема сборки прилагается!</p></p>
+                              </p>
+                          </div>
+                          </div>
+                        </div>
+                      </div>
+
+                         <div class="modal__down">
+                          <div class="modal__price">
+                            <span>75 620₽</span>
+                            <span>69 620₽</span>
+                          </div>
+                          <a href="popup-link-6" class="popup-links modal__btn ">Отставить заявку</a>
+                         </div>
+                      </div>
+                      <a href="#popup-modal-6" class="close__popup popular-modal__close"><img src="./img/closr.svg" alt=""/></a>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div id="popup-link-6" class="popup">
+                  <div class="popup__body">
+                    <div class="popup__content application ">
+                      <h1>Оставить заявку</h1>
+                      <span>
+                        <div class="application__left" ><img src="./img/kitchen-popup-1.png" alt=""></div>
+                        <div class="application__right">
+                          <p>Кухонный гарнитур “Шимо”. Длина 1.2 метра.</p>
+                          <p>75 620₽</p>
+                          <p>69 620₽</p>
+                        </div>
+                      </span>
+                      <form action="">
+                        <input placeholder="Имя" type="text">
+                        <input placeholder="+7(_ _ _) _ _ _-_ _-_ _"
+                        type="tel"
+                        id="tel">
+                        <button>Оставить заявку</button>
+                      </form>
+                      <p class="p-bottom">Нажимая кнопку “Оставить заявку”, вы соглашаетесь с условиями 
+                        Политики конфиденциальности</p>
+  
+                        <a class="popup-link-1-close close__popup" href="popup-link-6"><img src="./img/closr.svg" alt=""></a>
+                    </div>
+                  </div>
+                </div>
             </div>
+
           </div>
 
           <div class="popular-modal__btn">
@@ -257,7 +758,7 @@
         </div>
       </section>
 
-      <section class="choice">
+      <section class="choice ">
         <div class="container">
           <div class="choice__title title">
             Выбор <span class="yellow__text">кухни по стилям</span>
@@ -269,58 +770,206 @@
           </div>
           <div class="choice__row">
             <h3>Выберите стиль:</h3>
-            <ul class="choice__box">
-              <li class="choice__item-active">Эконом</li>
-              <li class="choice__item">Маленькие</li>
-              <li class="choice__item">Классика</li>
-              <li class="choice__item">Скандинавский</li>
-              <li class="choice__item">Минимализм</li>
-              <li class="choice__item">Хай-тек</li>
-              <li class="choice__item">Лофт</li>
-              <li class="choice__item">Прованс</li>
-            </ul>
+
+            <div class="tabs">
+              <ul class="tabs__container">
+                <li data-tab="tab-1" class="tab__title tab__title-choic ">Эконом</li>
+                <li data-tab="tab-2" class="tab__title tab__title-choic">Маленькие</li>
+                <li data-tab="tab-3" class="tab__title tab__title-choic">Классика</li>
+                <li data-tab="tab-4" class="tab__title tab__title-choic">Скандинавский</li>
+                <li data-tab="tab-5" class="tab__title tab__title-choic">Минимализм</li>
+              </ul>
+            </div>
           </div>
-
-          <div class="choice__wrapper">
-            <div class="choice__wrp-item">
-              <img src="./img/scale_1200.png" alt="" />
-              <div class="lupa">
-                <a href=""><img src="./img/scope.svg" alt="" /></a>
+          <div class="tabs__wpapper">
+            <div id="tab-1" class="tab__content hidden-tab-content">
+              <div class="tabs-content__card">
+                <img src="./img/gallery-img1.png" alt="Kitchen" />
+                <button class="tabs-content__btn" id="tabs-content__btn">
+                  <img src="./img/gallery-btn.svg" alt="btn" />
+                </button>
+              </div>
+              <div class="tabs-content__card">
+                <img src="./img/gallery-img2.png" alt="Kitchen" />
+                <button class="tabs-content__btn" id="tabs-content__btn">
+                  <img src="./img/gallery-btn.svg" alt="btn" />
+                </button>
+              </div>
+              <div class="tabs-content__card">
+                <img src="./img/gallery-img3.png" alt="Kitchen" />
+                <button class="tabs-content__btn" id="tabs-content__btn">
+                  <img src="./img/gallery-btn.svg" alt="btn" />
+                </button>
+              </div>
+              <div class="tabs-content__card">
+                <img src="./img/gallery-img4.png" alt="Kitchen" />
+                <button class="tabs-content__btn" id="tabs-content__btn">
+                  <img src="./img/gallery-btn.svg" alt="btn" />
+                </button>
+              </div>
+              <div class="tabs-content__card">
+                <img src="./img/gallery-img5.png" alt="Kitchen" />
+                <button class="tabs-content__btn" id="tabs-content__btn">
+                  <img src="./img/gallery-btn.svg" alt="btn" />
+                </button>
+              </div>
+              <div class="tabs-content__card">
+                <img src="./img/gallery-img6.png" alt="Kitchen" />
+                <button class="tabs-content__btn" id="tabs-content__btn">
+                  <img src="./img/gallery-btn.svg" alt="btn" />
+                </button>
               </div>
             </div>
-
-            <div class="choice__wrp-item">
-              <img src="./img/scale_1200.png" alt="" />
-              <div class="lupa">
-                <a href=""><img src="./img/scope.svg" alt="" /></a>
+            <div id="tab-2" class="tab__content hidden-tab-content">
+              <div class="tabs-content__card">
+                <img src="./img/gallery-img-2razdel-1.jpg" alt="Kitchen" />
+                <button class="tabs-content__btn" id="tabs-content__btn">
+                  <img src="./img/gallery-btn.svg" alt="btn" />
+                </button>
+              </div>
+              <div class="tabs-content__card">
+                <img src="./img/gallery-img-2razdel-2.jpg" alt="Kitchen" />
+                <button class="tabs-content__btn" id="tabs-content__btn">
+                  <img src="./img/gallery-btn.svg" alt="btn" />
+                </button>
+              </div>
+              <div class="tabs-content__card">
+                <img src="./img/gallery-img-2razdel-3.jpg" alt="Kitchen" />
+                <button class="tabs-content__btn" id="tabs-content__btn">
+                  <img src="./img/gallery-btn.svg" alt="btn" />
+                </button>
+              </div>
+              <div class="tabs-content__card">
+                <img src="./img/gallery-img-2razdel-4.jpg" alt="Kitchen" />
+                <button class="tabs-content__btn" id="tabs-content__btn">
+                  <img src="./img/gallery-btn.svg" alt="btn" />
+                </button>
+              </div>
+              <div class="tabs-content__card">
+                <img src="./img/gallery-img-2razdel-5.jpg" alt="Kitchen" />
+                <button class="tabs-content__btn" id="tabs-content__btn">
+                  <img src="./img/gallery-btn.svg" alt="btn" />
+                </button>
+              </div>
+              <div class="tabs-content__card">
+                <img src="./img/gallery-img-2razdel-6.jpg" alt="Kitchen" />
+                <button class="tabs-content__btn" id="tabs-content__btn">
+                  <img src="./img/gallery-btn.svg" alt="btn" />
+                </button>
               </div>
             </div>
-
-            <div class="choice__wrp-item">
-              <img src="./img/scale_1200.png" alt="" />
-              <div class="lupa">
-                <a href=""><img src="./img/scope.svg" alt="" /></a>
+            <div id="tab-3" class="tab__content hidden-tab-content">
+              <div class="tabs-content__card">
+                <img src="./img/gallery-img1.png" alt="Kitchen" />
+                <button class="tabs-content__btn" id="tabs-content__btn">
+                  <img src="./img/gallery-btn.svg" alt="btn" />
+                </button>
+              </div>
+              <div class="tabs-content__card">
+                <img src="./img/gallery-img2.png" alt="Kitchen" />
+                <button class="tabs-content__btn" id="tabs-content__btn">
+                  <img src="./img/gallery-btn.svg" alt="btn" />
+                </button>
+              </div>
+              <div class="tabs-content__card">
+                <img src="./img/gallery-img3.png" alt="Kitchen" />
+                <button class="tabs-content__btn" id="tabs-content__btn">
+                  <img src="./img/gallery-btn.svg" alt="btn" />
+                </button>
+              </div>
+              <div class="tabs-content__card">
+                <img src="./img/gallery-img4.png" alt="Kitchen" />
+                <button class="tabs-content__btn" id="tabs-content__btn">
+                  <img src="./img/gallery-btn.svg" alt="btn" />
+                </button>
+              </div>
+              <div class="tabs-content__card">
+                <img src="./img/gallery-img5.png" alt="Kitchen" />
+                <button class="tabs-content__btn" id="tabs-content__btn">
+                  <img src="./img/gallery-btn.svg" alt="btn" />
+                </button>
+              </div>
+              <div class="tabs-content__card">
+                <img src="./img/gallery-img6.png" alt="Kitchen" />
+                <button class="tabs-content__btn" id="tabs-content__btn">
+                  <img src="./img/gallery-btn.svg" alt="btn" />
+                </button>
               </div>
             </div>
-
-            <div class="choice__wrp-item">
-              <img src="./img/scale_1200.png" alt="" />
-              <div class="lupa">
-                <a href=""><img src="./img/scope.svg" alt="" /></a>
+            <div id="tab-4" class="tab__content hidden-tab-content">
+              <div class="tabs-content__card">
+                <img src="./img/gallery-img-4razdel-1.jpg" alt="Kitchen" />
+                <button class="tabs-content__btn" id="tabs-content__btn">
+                  <img src="./img/gallery-btn.svg" alt="btn" />
+                </button>
+              </div>
+              <div class="tabs-content__card">
+                <img src="./img/gallery-img-4razdel-2.jpg" alt="Kitchen" />
+                <button class="tabs-content__btn" id="tabs-content__btn">
+                  <img src="./img/gallery-btn.svg" alt="btn" />
+                </button>
+              </div>
+              <div class="tabs-content__card">
+                <img src="./img/gallery-img-4razdel-3.jpg" alt="Kitchen" />
+                <button class="tabs-content__btn" id="tabs-content__btn">
+                  <img src="./img/gallery-btn.svg" alt="btn" />
+                </button>
+              </div>
+              <div class="tabs-content__card">
+                <img src="./img/gallery-img-4razdel-4.jpg" alt="Kitchen" />
+                <button class="tabs-content__btn" id="tabs-content__btn">
+                  <img src="./img/gallery-btn.svg" alt="btn" />
+                </button>
+              </div>
+              <div class="tabs-content__card">
+                <img src="./img/gallery-img-4razdel-5.jpg" alt="Kitchen" />
+                <button class="tabs-content__btn" id="tabs-content__btn">
+                  <img src="./img/gallery-btn.svg" alt="btn" />
+                </button>
+              </div>
+              <div class="tabs-content__card">
+                <img src="./img/gallery-img-4razdel-6.jpg" alt="Kitchen" />
+                <button class="tabs-content__btn" id="tabs-content__btn">
+                  <img src="./img/gallery-btn.svg" alt="btn" />
+                </button>
               </div>
             </div>
-
-            <div class="choice__wrp-item">
-              <img src="./img/scale_1200.png" alt="" />
-              <div class="lupa">
-                <a href=""><img src="./img/scope.svg" alt="" /></a>
+            <div id="tab-5" class="tab__content hidden-tab-content">
+              <div class="tabs-content__card">
+                <img src="./img/gallery-img1.png" alt="Kitchen" />
+                <button class="tabs-content__btn" id="tabs-content__btn">
+                  <img src="./img/gallery-btn.svg" alt="btn" />
+                </button>
               </div>
-            </div>
-
-            <div class="choice__wrp-item">
-              <img src="./img/scale_1200.png" alt="" />
-              <div class="lupa">
-                <a href=""><img src="./img/scope.svg" alt="" /></a>
+              <div class="tabs-content__card">
+                <img src="./img/gallery-img2.png" alt="Kitchen" />
+                <button class="tabs-content__btn" id="tabs-content__btn">
+                  <img src="./img/gallery-btn.svg" alt="btn" />
+                </button>
+              </div>
+              <div class="tabs-content__card">
+                <img src="./img/gallery-img3.png" alt="Kitchen" />
+                <button class="tabs-content__btn" id="tabs-content__btn">
+                  <img src="./img/gallery-btn.svg" alt="btn" />
+                </button>
+              </div>
+              <div class="tabs-content__card">
+                <img src="./img/gallery-img4.png" alt="Kitchen" />
+                <button class="tabs-content__btn" id="tabs-content__btn">
+                  <img src="./img/gallery-btn.svg" alt="btn" />
+                </button>
+              </div>
+              <div class="tabs-content__card">
+                <img src="./img/gallery-img5.png" alt="Kitchen" />
+                <button class="tabs-content__btn" id="tabs-content__btn">
+                  <img src="./img/gallery-btn.svg" alt="btn" />
+                </button>
+              </div>
+              <div class="tabs-content__card">
+                <img src="./img/gallery-img6.png" alt="Kitchen" />
+                <button class="tabs-content__btn" id="tabs-content__btn">
+                  <img src="./img/gallery-btn.svg" alt="btn" />
+                </button>
               </div>
             </div>
           </div>
@@ -367,13 +1016,13 @@
               </form>
             </div>
             <div class="choice__form-right">
-              <img src="./img/medium-kitchen 1.png" alt="" />
+              <img src="./img/.png" alt="" />
             </div>
           </div>
         </div>
       </section>
 
-      <section class="test">
+      <section class="test ">
         <div class="container">
           <div class="test__top">
             <h1>
@@ -436,7 +1085,7 @@
         </div>
       </section>
 
-      <section class="material">
+      <section class="material ">
         <div class="container">
           <div class="material__title title">
             Фурнитура и <span class="yellow__text">метериалы</span>
@@ -913,16 +1562,16 @@
                 производства мировым <br />
                 стандартам качества
               </h2>
-              <img src="./img/2505-4 1.png" alt="" />
+              <img src="./img/factory.png" alt="" />
             </div>
             <div class="make__item">
-              <img src="./img/image_73739_25_v1 1.png" alt="" />
+              <img src="./img/material.png" alt="" />
             </div>
             <div class="make__item">
-              <img src="./img/proizvodstvo-mebeli 1.png" alt="" />
+              <img src="./img/proizvodstvo.png" alt="" />
             </div>
             <div class="make__item">
-              <img src="./img/7 1.png" alt="" />
+              <img src="./img/worker.png" alt="" />
             </div>
           </div>
         </div>
@@ -933,10 +1582,42 @@
           <div class="our-work__title title">
             Наши <span class="white__text">работы</span>
           </div>
+
+          <div class="slider">
+            <div class="slides">
+                <div class="slide">
+                    <img src="./img/gallery-img1.png" alt="Слайд 1">
+                </div>
+                <div class="slide">
+                    <img src="./img/gallery-img2.png" alt="Слайд 2">
+                </div>
+                <div class="slide">
+                    <img src="./img/gallery-img3.png" alt="Слайд 3">
+                </div>
+                <div class="slide">
+                    <img src="./img/gallery-img4.png" alt="Слайд 4">
+                </div>
+                <div class="slide">
+                    <img src="./img/gallery-img5.png" alt="Слайд 5">
+                </div>
+                <div class="slide">
+                    <img src="./img/gallery-img6.png" alt="Слайд 6">
+                </div>
+                <div class="slide">
+                    <img src="./img/gallery-img-2razdel-1.jpg" alt="Слайд 7">
+                </div>
+            </div>
+            <button class="prev" onclick="changeSlide(-1)"><img src="./img/стрелка.svg" alt=""></button>
+            <button class="next" onclick="changeSlide(1)"><img src="./img/стрелка.svg" alt=""></button>
+        </div>
+            
+        </div>
+
+        
         </div>
       </section>
 
-      <section class="footer-form">
+      <section class="footer-form ">
         <div class="container">
           <div class="footer-form__flex">
             <div class="footer-form__left">
@@ -982,7 +1663,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer ">
       <div class="container">
         <div class="footer__row">
           <div class="footer__logo">
@@ -1092,5 +1773,7 @@
     <script src="https://unpkg.com/imask"></script>
     <script src="./Js/mask-phone.js"></script>
     <script src="./Js/modal-first.js"></script>
+    <script src="/Js/tabs.js"></script>
+    <script src="./Js/slider.js" ></script>
   </body>
 </html>

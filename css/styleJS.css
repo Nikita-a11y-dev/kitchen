@@ -278,6 +278,9 @@ body.lock {
   }
 }
 .popular-modal__popup {
+  display: flex;
+  gap: 20px;
+  padding: 51px 35px 31px 28px;
   position: relative;
   border-radius: 10px;
   background: rgb(255, 255, 255);
@@ -297,4 +300,243 @@ body.lock {
 .material__title-modal {
   text-align: left;
   margin-bottom: 41px;
+}
+
+.modal__right-title {
+  color: rgb(34, 34, 34);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  margin-bottom: 32px;
+}
+.modal__right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.modal__row {
+  display: flex;
+  justify-content: space-between;
+
+  .tab__title {
+    width: 196px;
+    height: 40px;
+    border-radius: 30px;
+    background: rgb(245, 245, 245);
+    padding: 5px 0;
+
+    cursor: pointer;
+    color: rgb(140, 140, 140);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+  }
+  .active-tab {
+    border: 1px solid rgb(153, 203, 56);
+    background-color: #fff;
+
+    color: rgb(153, 203, 56);
+  }
+}
+.modal__row {
+  margin-bottom: 38px;
+}
+.modal-tabs-wrapper .hidden-tab-content {
+  display: none;
+}
+.modal__down {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.modal__price {
+  display: flex;
+  flex-direction: column;
+  span:first-child {
+    color: rgb(176, 176, 176);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    text-decoration-line: line-through;
+  }
+  span:last-child {
+    color: rgb(153, 203, 56);
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 37px;
+  }
+}
+.modal__btn {
+  width: 273.94px;
+  height: 54.91px;
+  padding-top: 16px;
+  border-radius: 30px;
+  box-shadow: 10px 10px 20px 0px rgba(255, 216, 111, 0.4);
+  background: linear-gradient(
+    268.28deg,
+    rgb(251, 216, 70) 0.046%,
+    rgb(255, 232, 136) 99.928%
+  );
+
+  color: rgb(51, 51, 51);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: center;
+}
+
+.application {
+  z-index: 9999;
+  position: relative;
+  width: 500px;
+  height: 550px;
+  padding: 30px 30px 18px;
+
+  border-radius: 10px;
+  background: rgb(255, 255, 255);
+  h1 {
+    color: rgb(34, 34, 34);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    margin-bottom: 35px;
+  }
+  span {
+    display: flex;
+    gap: 23px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.05);
+    background: rgb(255, 255, 255);
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    input {
+      width: 440px;
+      height: 60px;
+      padding-left: 27px;
+      box-sizing: border-box;
+      border: 1px solid rgb(176, 176, 176);
+      border-radius: 30px;
+
+      color: rgb(51, 51, 51);
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 20px;
+      margin-bottom: 30px;
+    }
+    input:focus {
+      border: 1px solid rgb(251, 216, 70);
+    }
+    input::placeholder {
+      color: rgb(176, 176, 176);
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 20px;
+    }
+    button {
+      padding: 20px 0;
+      border-radius: 30px;
+      box-shadow: 5px 8px 5px 0px rgba(248, 204, 85, 0.1);
+      background: linear-gradient(
+        268.28deg,
+        rgb(251, 216, 70) 0.021%,
+        rgb(255, 232, 136) 99.967%
+      );
+
+      color: rgb(51, 51, 51);
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 24px;
+      margin-bottom: 15px;
+    }
+  }
+  .p-bottom {
+    color: rgb(115, 115, 115);
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 15px;
+    text-align: center;
+  }
+}
+.application__left {
+  img {
+    width: 98.83px;
+    height: 98.83px;
+  }
+}
+.application__right {
+  p:first-child {
+    color: rgb(51, 51, 51);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    margin-bottom: 13px;
+  }
+  p:nth-child(2) {
+    color: rgb(176, 176, 176);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 3px;
+  }
+  p:last-child {
+    color: rgb(153, 203, 56);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+}
+.popup-link-1-close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+/* SLIDER */
+.slider {
+  position: relative;
+  max-width: 1140px; /* Ширина для трех слайдов */
+  margin: auto;
+  overflow: hidden;
+  button {
+    position: absolute;
+    top: 45%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgb(51, 51, 51);
+    img {
+      width: 11.44px;
+      height: 18.56px;
+    }
+  }
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  min-width: 33.34%;
+  box-sizing: border-box;
+  img {
+    width: 360px;
+    height: 360px;
+  }
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+  transform: rotate(180deg);
 }
