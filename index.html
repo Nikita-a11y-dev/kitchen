@@ -16,7 +16,7 @@
   </head>
   <body>
     <div class="wrapper "></div>
-    <header class="header ">
+    <header class="header  ">
       <div class="container">
         <div class="header__row">
           <span class="header__text">
@@ -36,7 +36,7 @@
     <nav class="nav ">
       <div class="container">
         <ul class="nav__row">
-          <li class="nav__iten">
+          <li class="nav__item-img">
             <a href=""><img src="./img/Лого.svg" alt="" /></a>
           </li>
           <li class="nav__item"><a href="">Каталог товаров</a></li>
@@ -45,14 +45,45 @@
           <li class="nav__item"><a href="">Фотопечать</a></li>
           <li class="nav__item"><a href="">Готовые решения</a></li>
           <li class="nav__item"><a href="">Контакты</a></li>
-          <li>
+          <li class="nav__item" >
             <a href="#popup" class="popup-links nav__btn">Заказать звонок</a>
           </li>
-        </ul>
+          <li class="nav__item-mobil">
+            <img src="./img/phone-yellow.svg" alt="" />
+            <a href="tel:+73466681598">+7 (3466) 68-15-98</a>
+          </li>
+          <div class="nav__btn-mobil"> 
+            <span></span>
+          </div>
+          </ul>
+          <div class="menu__body">
+            <nav class="nav__menu">
+              <ul>
+                <li class="nav__item-m">Каталог товаров</li>
+                <li class="nav__item-m">Кухонные модули</li>
+                <li class="nav__item-m">Декоры </li>
+                <li class="nav__item-m">Фотопечать</li>
+                <li class="nav__item-m">Готовые решения</li>
+                <li class="nav__item-m">Контакты</li>
+              </ul>
+
+              <div class="nav__item-n">
+                <img src="./img/phone-yellow.svg" alt="" />
+                <a href="tel:+73466681598">+7 (3466) 68-15-98</a>
+              </div>
+
+              <a class="nav__item-btn" href="">Заказать звонок</a>
+
+              <div class="nav__item-b">
+                <img src="./img/point-yellow.svg" alt="point" />
+                <p>г. Нижневартовск, ул. Индустриальная, д.7 стр. 1 ТЦ “ВДНХ”, 2 этаж, бутик № 20а</p>
+              </div>
+            </nav>
+          </div>
       </div>
     </nav>
-    <main class="">
-      <section class="first-screen ">
+    <main class="none ">
+      <section class="first-screen  ">
         <div class="container">
           <div class="first-screen__blok">
             <h1>
@@ -112,7 +143,7 @@
         </div>
       </section>
 
-      <section class="designer ">
+      <section class="designer none   ">
         <div class="containr">
           <div class="title designer__title">
             <span class="yellow__text">ОНЛАЙН</span> КОНСТРУКТОР КУХНИ
@@ -128,7 +159,7 @@
         </div>
       </section>
 
-      <section class="popular-modal ">
+      <section class="popular-modal  ">
         <div class="container">
           <div class="popular-modal__title title">популярные модели</div>
           <div class="popular-modal__wrapper">
@@ -758,7 +789,7 @@
         </div>
       </section>
 
-      <section class="choice ">
+      <section class="choice none ">
         <div class="container">
           <div class="choice__title title">
             Выбор <span class="yellow__text">кухни по стилям</span>
@@ -1022,7 +1053,7 @@
         </div>
       </section>
 
-      <section class="test ">
+      <section class="test none ">
         <div class="container">
           <div class="test__top">
             <h1>
@@ -1085,7 +1116,7 @@
         </div>
       </section>
 
-      <section class="material ">
+      <section class="material none ">
         <div class="container">
           <div class="material__title title">
             Фурнитура и <span class="yellow__text">метериалы</span>
@@ -1551,7 +1582,7 @@
         </div>
       </section>
 
-      <section class="make">
+      <section class="make none">
         <div class="container">
           <div class="make__title">Производство</div>
 
@@ -1577,7 +1608,7 @@
         </div>
       </section>
 
-      <section class="our-work">
+      <section class="our-work none">
         <div class="container">
           <div class="our-work__title title">
             Наши <span class="white__text">работы</span>
@@ -1617,7 +1648,7 @@
         </div>
       </section>
 
-      <section class="footer-form ">
+      <section class="footer-form none ">
         <div class="container">
           <div class="footer-form__flex">
             <div class="footer-form__left">
@@ -1663,7 +1694,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer ">
+    <footer class="footer none">
       <div class="container">
         <div class="footer__row">
           <div class="footer__logo">
@@ -1775,5 +1806,6 @@
     <script src="./Js/modal-first.js"></script>
     <script src="/Js/tabs.js"></script>
     <script src="./Js/slider.js" ></script>
+    <script src="./Js/burger.js"></script>
   </body>
 </html>

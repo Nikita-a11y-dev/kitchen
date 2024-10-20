@@ -1,4 +1,6 @@
 @import url(./styleJS.css);
+@import url(./media.css);
+@import url(./burger.css);
 body {
   font-family: "Montserrat", sans-serif;
   color: rgb(51, 51, 51);
@@ -86,6 +88,9 @@ a {
   a:hover {
     color: rgb(153, 203, 56);
   }
+}
+.nav__item-mobil {
+  display: none;
 }
 /* MAIN */
 
