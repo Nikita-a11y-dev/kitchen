@@ -16,7 +16,7 @@
   </head>
   <body>
     <div class="wrapper "></div>
-    <header class="header  ">
+    <header class="header none">
       <div class="container">
         <div class="header__row">
           <span class="header__text">
@@ -33,7 +33,7 @@
         </div>
       </div>
     </header>
-    <nav class="nav ">
+    <nav class="nav  none">
       <div class="container">
         <ul class="nav__row">
           <li class="nav__item-img">
@@ -82,8 +82,8 @@
           </div>
       </div>
     </nav>
-    <main class="none ">
-      <section class="first-screen  ">
+    <main class=" ">
+      <section class="first-screen  none ">
         <div class="container">
           <div class="first-screen__blok">
             <h1>
@@ -143,7 +143,7 @@
         </div>
       </section>
 
-      <section class="designer none   ">
+      <section class="designer  none">
         <div class="containr">
           <div class="title designer__title">
             <span class="yellow__text">ОНЛАЙН</span> КОНСТРУКТОР КУХНИ
@@ -159,7 +159,7 @@
         </div>
       </section>
 
-      <section class="popular-modal  ">
+      <section class="popular-modal none ">
         <div class="container">
           <div class="popular-modal__title title">популярные модели</div>
           <div class="popular-modal__wrapper">
@@ -789,7 +789,7 @@
         </div>
       </section>
 
-      <section class="choice none ">
+      <section class="choice  ">
         <div class="container">
           <div class="choice__title title">
             Выбор <span class="yellow__text">кухни по стилям</span>
@@ -1005,7 +1005,11 @@
             </div>
           </div>
 
-          <div class="choice__form">
+          <a class="choice__btn-top">
+            Показать еще
+          </a>
+
+          <div class="choice__form none">
             <div class="choice__form-left">
               <h1>
                 Есть замер или эскиз кухни, или просто нашли фото кухни в
@@ -1047,7 +1051,7 @@
               </form>
             </div>
             <div class="choice__form-right">
-              <img src="./img/.png" alt="" />
+              <img src="./img/medium-kitchen 1.png" alt="" />
             </div>
           </div>
         </div>
@@ -1648,7 +1652,7 @@
         </div>
       </section>
 
-      <section class="footer-form none ">
+      <section class="footer-form  none">
         <div class="container">
           <div class="footer-form__flex">
             <div class="footer-form__left">
@@ -1658,17 +1662,20 @@
               </h2>
               <form action="">
                 <div class="input__row">
+                  
                   <input
                     placeholder="Ваше имя"
                     type="text"
                     class="footer-form__input"
                   />
+                  
                   <input
                     class="footer-form__input"
                     placeholder="+7(_ _ _) _ _ _-_ _-_ _"
                     type="tel"
                     id="tel"
                   />
+                  <div class="input__before-img"><img src="./img/hotpngcom 2.png" alt="" /></div>
                   <input
                     placeholder="Кратко опишите Ваш вопрос"
                     type="text"

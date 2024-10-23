@@ -524,7 +524,7 @@ body.lock {
 }
 
 .slide {
-  min-width: 33.34%;
+  min-width: 34.34%;
   box-sizing: border-box;
   img {
     width: 360px;
@@ -539,4 +539,27 @@ body.lock {
 .next {
   right: 10px;
   transform: rotate(180deg);
+}
+@media (max-width: 1150px) {
+  .slide {
+    img {
+      width: 320px;
+      height: 320px;
+    }
+  }
+}
+/* Адаптив для экранов шириной до 768px */
+@media (max-width: 1000px) {
+  .slide {
+    min-width: 50%; /* 2 слайда на экране 768px */
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* Адаптив для экранов шириной до 375px */
+@media (max-width: 700px) {
+  .slide {
+    min-width: 100%;
+  }
 }

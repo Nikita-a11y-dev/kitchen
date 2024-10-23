@@ -156,7 +156,7 @@
     margin-bottom: 70px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 380px) {
   .nav__btn-mobil {
     width: 30px;
     height: 24px;
