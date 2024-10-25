@@ -2,7 +2,8 @@
   opacity: 1;
   visibility: visible;
 }
-body.lock {
+body.lock,
+body.lock-b {
   overflow: hidden;
 }
 
@@ -119,7 +120,11 @@ body.lock {
     text-align: center;
     width: 490px;
     height: 67px;
-    padding: 24px 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     border-radius: 30px;
     box-shadow: 5px 8px 5px 0px rgba(248, 204, 85, 0.1);
     background: linear-gradient(
@@ -127,10 +132,12 @@ body.lock {
       rgb(251, 216, 70) 0.021%,
       rgb(255, 232, 136) 99.967%
     );
+
     color: rgb(0, 0, 0);
     font-size: 20px;
     font-weight: 600;
     line-height: 24px;
+
     margin-bottom: 20px;
   }
   span {
@@ -142,6 +149,10 @@ body.lock {
     font-weight: 400;
     line-height: 15px;
     text-align: center;
+    a {
+      text-decoration: underline;
+      text-decoration-color: rgb(115, 115, 115);
+    }
   }
   .call__close {
     position: absolute;
@@ -409,6 +420,7 @@ body.lock {
     border-radius: 10px;
     box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.05);
     background: rgb(255, 255, 255);
+    margin-bottom: 30px;
   }
   form {
     display: flex;

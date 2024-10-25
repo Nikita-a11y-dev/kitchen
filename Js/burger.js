@@ -4,5 +4,5 @@ const ICON_BODY = document.querySelector(".menu__body");
 ICON_MENU.addEventListener("click", function (e) {
   ICON_MENU.classList.toggle("active");
   ICON_BODY.classList.toggle("active");
-  body.classList.toggle("lock");
+  body.classList.toggle("lock-b");
 });
