@@ -1,9 +1,9 @@
 @import url(./styleJS.css);
 @import url(./media.css);
 @import url(./burger.css);
-* {
+/* * {
   outline: 3px green solid !important;
-}
+} */
 body {
   font-family: "Montserrat", sans-serif;
   color: rgb(51, 51, 51);
@@ -405,15 +405,17 @@ a {
 .tabs__wpapper .hidden-tab-content {
   display: none;
 }
-
+.choice__row {
+  display: flex;
+}
 .form__choice {
   display: flex;
+  flex-direction: column;
   gap: 20px;
 }
 .choice__form {
+  position: relative;
   padding: 38px 0 10px 26px;
-  display: flex;
-  align-items: center;
   border-radius: 30px;
   background: rgb(245, 245, 245);
   margin-bottom: 93px;
@@ -498,22 +500,34 @@ a {
     line-height: 22px;
   }
 }
-.input__right {
+.form__choice-top {
   display: flex;
-  flex-direction: column;
-  gap: 10px;
-  p {
+  gap: 20px;
+  width: 740px;
+  input {
     width: 360px;
-    color: rgb(115, 115, 115);
-    font-size: 9px;
-    font-weight: 400;
-    line-height: 15px;
-    text-align: center;
+    height: 60px;
   }
 }
-
+.form__choice-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 740px;
+  .form__choice-right {
+    width: 360px;
+    p {
+      width: 329px;
+      color: rgb(115, 115, 115);
+      font-size: 9px;
+      font-weight: 400;
+      line-height: 15px;
+      text-align: center;
+      margin: 0;
+    }
+  }
+}
 .choice__btn {
-  margin-top: 18px;
   width: 360px;
   height: 60px;
 
@@ -529,7 +543,18 @@ a {
   font-weight: 700;
   line-height: 24px;
 }
-
+.choice__form-right {
+  position: absolute;
+  top: 72px;
+  right: 0;
+  img {
+    width: 359.66px;
+    height: 275px;
+  }
+}
+.choice__img-hid {
+  display: none;
+}
 /* test */
 .test {
   background: linear-gradient(
@@ -962,6 +987,7 @@ a {
 .footer-form__left {
   max-width: 752px;
   h2 {
+    color: white;
     text-align: left;
     margin-bottom: 30px;
   }
@@ -976,6 +1002,12 @@ a {
   gap: 30px;
   margin-bottom: 30px;
 }
+.input__wrapper {
+  width: 750px;
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+}
 .input__before-img {
   display: none;
   img {
@@ -983,7 +1015,8 @@ a {
     height: 222.92px;
   }
 }
-.footer-form__input {
+.footer-form__input,
+.footer-form__input-last {
   padding: 16px 0 25px 21px;
   width: 360px;
   box-sizing: border-box;
@@ -1001,13 +1034,14 @@ a {
   font-weight: 400;
   line-height: 24px;
 }
-.footer-form__input:last-child {
+.footer-form__input-last {
   width: 750px;
   height: 113px;
 }
 .btn__row {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   p {
     width: 362px;
     height: 43px;

@@ -37,6 +37,28 @@
     width: 400px;
   }
 }
+@media (max-width: 1350px) {
+  .footer-form__right {
+    display: none;
+  }
+  .input__before-img {
+    display: block;
+  }
+  .input__wrapper {
+    width: 360px;
+    height: 222.92px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .input__row {
+    gap: 16px;
+    justify-content: space-between;
+  }
+  .footer-form__flex {
+    justify-content: center;
+  }
+}
 
 @media (max-width: 1150px) {
   .nav__item {
@@ -64,9 +86,51 @@
   .tabs-content__card:nth-child(6) {
     display: none;
   }
+  .choice__form {
+    padding: 29px 15px 28px;
+    h1 {
+      width: 100%;
+      font-size: 18px;
+      line-height: 22px;
+      margin-bottom: 11px;
+    }
 
+    p {
+      width: 100%;
+      font-size: 14px;
+      margin-bottom: 36px;
+    }
+  }
+  .form__choice-top {
+    flex-direction: column;
+  }
+  .form__choice-bottom {
+    flex-direction: column;
+    align-items: normal;
+    justify-content: normal;
+    width: 100%;
+    .input__file-box {
+      margin-bottom: 36px;
+    }
+    .form__choice-right {
+      width: 100%;
+    }
+  }
+  .form__choice-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
   .choice__form-right {
-    display: none;
+    top: 128px;
+  }
+  .choice__form-right {
+    right: 33px;
+    img {
+      width: 279px;
+      height: 213px;
+    }
   }
 
   /* TEST */
@@ -177,6 +241,54 @@
       line-height: 100%;
       letter-spacing: 0%;
     }
+  }
+
+  .popular-modal__popup {
+    width: 708px;
+    height: 481px;
+    gap: 12px;
+    padding: 31px 16px 33px 15px;
+  }
+  .modal__right-title {
+    max-width: 326px;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
+  .modal__row {
+    margin-bottom: 20px;
+    max-width: 310px;
+    .tab__title {
+      width: 147.84px;
+      padding: 5px 0;
+    }
+  }
+
+  .modal-tabs-wrapper {
+    max-width: 315px;
+    p {
+      font-size: 12px;
+      line-height: 15px;
+    }
+  }
+
+  .modal__price {
+    span:first-child {
+      font-size: 20px;
+      line-height: 24px;
+    }
+    span:last-child {
+      font-size: 25px;
+      line-height: 37px;
+    }
+  }
+  .modal__btn {
+    width: 187.24px;
+    height: 41.14px;
+    padding-top: 12px;
+
+    font-size: 16px;
+    line-height: 20px;
   }
 }
 @media (max-width: 768px) {
@@ -298,10 +410,125 @@
   .make__title {
     font-size: 22px;
   }
+  .form__choice-right {
+    p {
+      width: 329px;
+    }
+  }
+  .choice__form-right {
+    img {
+      width: 279px;
+      height: 213px;
+    }
+  }
+  .form__choice-top {
+    margin-bottom: 27px;
+    input {
+      width: 329px;
+      height: 50px;
+    }
+  }
+
+  .footer-form__input {
+    padding: 18px 22px;
+    width: 344px;
+  }
+  .footer-form__input-last {
+    width: 708px;
+    height: 180px;
+    margin-bottom: 50px;
+  }
+  .input__row {
+    justify-content: start;
+    column-gap: 70px;
+  }
+  btn__row {
+    width: 344px;
+    height: 60px;
+  }
 }
 @media (max-width: 752px) {
   .make {
     height: 1500px;
+  }
+  .modal__left {
+    overflow: hidden;
+    margin-bottom: 30px;
+  }
+  .popup__body {
+    overflow-x: scroll;
+    overflow-y: auto;
+    touch-action: pan-y;
+    overflow-y: auto;
+    max-height: 100vh;
+    -webkit-overflow-scrolling: touch;
+  }
+  .popular-modal__popup {
+    margin-top: 240px;
+    margin-bottom: 85px;
+    width: 345px;
+    height: 850px;
+    flex-direction: column;
+    padding: 0;
+  }
+  .modal__right-title {
+    max-width: 315px;
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 25px;
+  }
+  .modal__right {
+    padding: 0 15px 26px;
+  }
+  .modal-tabs-wrapper {
+    margin-bottom: 21px;
+    p {
+      line-height: 20px;
+    }
+  }
+  .modal__down {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .modal__price {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    span:first-child {
+      font-size: 20px;
+      line-height: 24px;
+    }
+    span:last-child {
+      font-size: 30px;
+      line-height: 37px;
+    }
+  }
+  .modal__btn {
+    width: 315px;
+    height: 50px;
+    padding-top: 14px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .popular-modal__close {
+    position: absolute;
+    top: -12px;
+    right: -4px;
+    background: rgb(251, 216, 70);
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 17px;
+      height: 17px;
+    }
   }
 }
 @media (max-width: 760px) {
@@ -355,7 +582,85 @@
   .footer__nav {
     width: 200px;
   }
+
+  /* CHOICE */
+  .choice__img-hid {
+    display: block;
+    display: flex;
+    justify-content: center;
+  }
+
+  .choice__form {
+    h1 {
+      text-align: center;
+    }
+    p {
+      text-align: center;
+    }
+  }
+
+  .choice__form-right {
+    display: none;
+  }
+
+  .choice__form-left {
+    display: flex;
+    width: 100%;
+  }
+
+  .form__choice-top {
+    margin: 0 auto;
+    width: inherit;
+    align-items: center;
+  }
+
+  .form__choice-bottom {
+    margin: 0 auto;
+    width: inherit;
+    align-items: center;
+  }
+
+  .form__choice-right {
+    flex-direction: column;
+  }
+  .choice__form-left {
+    justify-content: center;
+  }
+
+  .input__before-img {
+    display: none;
+  }
+  .input__row {
+    justify-content: center;
+    column-gap: 70px;
+    margin-bottom: 0;
+  }
+  .footer-form__input-last {
+    width: 345px;
+    height: 113px;
+    margin-top: 18px;
+    margin-bottom: 29px;
+  }
+  .footer-form__input {
+    width: 345px;
+    height: 50px;
+  }
+  .input__wrapper {
+    height: 130px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .btn__row {
+    button {
+      margin-bottom: 39px;
+    }
+    flex-direction: column;
+    p {
+      text-align: center;
+    }
+  }
 }
+
 @media (max-width: 620px) {
   /* First-screen */
   .first-screen__card,
@@ -379,6 +684,168 @@
       }
     }
   }
+  .modal-success {
+    width: 345px;
+    height: 287px;
+    padding-top: 26px;
+    img {
+      width: 95px;
+      height: 95px;
+    }
+
+    h1 {
+      font-size: 22px;
+      line-height: 27px;
+      margin-bottom: 23px;
+    }
+    p {
+      max-width: 315px;
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    .success__btn {
+      top: -14px;
+      right: -14px;
+      background: rgb(251, 216, 70);
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 17px;
+        height: 17px;
+      }
+    }
+  }
+
+  .application {
+    width: 345px;
+    height: 511px;
+    padding: 17px 15px 18px;
+    h1 {
+      font-size: 22px;
+      line-height: 27px;
+      margin-bottom: 30px;
+    }
+    span {
+      gap: 9px;
+      padding: 15px;
+      margin-bottom: 36px;
+      p:first-child {
+        width: 193px;
+        font-size: 13px;
+        line-height: 17px;
+        margin-bottom: 17px;
+      }
+      p:nth-child(2) {
+        font-size: 14px;
+        line-height: 17px;
+        margin-bottom: 8px;
+      }
+      p:last-child {
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+
+    form {
+      input {
+        width: 315px;
+        height: 50px;
+        padding-left: 21px;
+      }
+      button {
+        width: 315px;
+        height: 50px;
+        padding: 16px 0;
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 23px;
+      }
+    }
+    .p-bottom {
+      font-size: 10px;
+      font-weight: 400;
+      line-height: 15px;
+    }
+  }
+
+  .popup-link-1-close {
+    top: -16px;
+    right: -16px;
+    background: rgb(251, 216, 70);
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 17px;
+      height: 17px;
+    }
+  }
+
+  .material__bg {
+    width: 345px;
+    height: 505px;
+    padding: 26px 15px 27px;
+    h1 {
+      width: 315px;
+      font-size: 21px;
+      line-height: 27px;
+    }
+    span {
+      gap: 10px;
+      width: 315px;
+      height: 89px;
+      padding: 10px 0 11px 20px;
+      margin-bottom: 35px;
+      img {
+        width: 77px;
+        height: 68px;
+      }
+      p {
+        width: 162px;
+
+        font-size: 18px;
+      }
+    }
+    .material__call {
+      width: 315px;
+      padding: 16px 0;
+      font-size: 18px;
+      line-height: 22px;
+      margin-bottom: 15px;
+    }
+    p {
+      width: 315px;
+    }
+    .material__close {
+      top: -11px;
+      right: -11px;
+      background: rgb(251, 216, 70);
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 17px;
+        height: 17px;
+      }
+    }
+  }
+  .material__input {
+    width: 315px;
+    height: 50px;
+
+    margin-bottom: 10px;
+  }
 }
 @media (max-width: 650px) {
   .test__main {
@@ -389,6 +856,61 @@
   }
   .test__main-right {
     padding: 20px 0 10px 24px;
+  }
+  .tabs__container {
+    height: 254px;
+  }
+
+  .call__card {
+    width: 345px;
+    height: 493px;
+    padding: 16px 0 29px 15px;
+    h1 {
+      font-size: 22px;
+      line-height: 27px;
+      margin-bottom: 37px;
+    }
+    p {
+      gap: 5px;
+      width: 315px;
+      font-size: 14px;
+      line-height: 20px;
+      margin-bottom: 39px;
+    }
+    input {
+      width: 315px;
+      height: 50px;
+      margin-bottom: 31px;
+      padding-left: 24px;
+    }
+    .btn__modal {
+      width: 315px;
+      height: 50px;
+      font-size: 18px;
+      line-height: 22px;
+      margin-bottom: 15px;
+    }
+    span {
+      width: 315px;
+      height: 41px;
+      font-size: 10px;
+      line-height: 15px;
+    }
+    .call__close {
+      top: -11px;
+      right: -11px;
+      background: rgb(251, 216, 70);
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 17px;
+        height: 17px;
+      }
+    }
   }
 }
 @media (max-width: 450px) {
@@ -547,6 +1069,89 @@
       margin-bottom: 15px;
     }
   }
+
+  /* CHOICE */
+
+  .choice__form {
+    h1 {
+      font-size: 16px;
+      line-height: 20px;
+    }
+    p {
+      font-size: 14px;
+      line-height: 17px;
+    }
+  }
+  .choice__img-hid {
+    img {
+      width: 256px;
+      height: 196px;
+    }
+  }
+
+  .footer-form__left {
+    h2 {
+      width: 345px;
+    }
+  }
+
+  .form__choice-top {
+    input {
+      width: 315px;
+      font-size: 16px;
+      line-height: 20px;
+    }
+    input::placeholder {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+  .input__file-box {
+    div {
+      width: 242px;
+      font-size: 16px;
+    }
+  }
+  .choice__btn {
+    width: 315px;
+    height: 50px;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 21px;
+  }
+
+  .form__choice-bottom {
+    .form__choice-right {
+      p {
+        width: 315px;
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 15px;
+      }
+    }
+  }
+
+  .footer-form__input,
+  .footer-form__input::placeholder,
+  .footer-form__input-last {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+
+  .btn__row {
+    button {
+      width: 345px;
+      height: 60px;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 20px;
+    }
+    p {
+      font-size: 12px;
+      line-height: 15px;
+    }
+  }
 }
 @media (max-width: 374px) {
   .first-screen__box {
@@ -593,5 +1198,161 @@
     p {
       text-align: center;
     }
+  }
+
+  .tabs__container {
+    height: 254px;
+  }
+  .tabs__wpapper .tab__content .tabs-content__card .tabs-content__btn {
+    right: 35px;
+  }
+
+  .form__choice-top {
+    input {
+      width: 270px;
+    }
+  }
+  .input__file-box {
+    div {
+      width: 190px;
+      font-size: 15px;
+    }
+  }
+  .choice__btn {
+    width: 270px;
+  }
+
+  .form__choice-bottom {
+    .form__choice-right {
+      p {
+        width: 270px;
+        font-size: 8px;
+      }
+    }
+  }
+
+  .footer-form__input,
+  .footer-form__input-last {
+    width: 300px;
+  }
+  .btn__row {
+    button {
+      width: 300px;
+    }
+    p {
+      width: 300px;
+    }
+  }
+  .input__wrapper {
+    width: 300px;
+  }
+  .input__row {
+    width: 300px;
+  }
+  .footer-form__form {
+    width: 300px;
+  }
+  .footer-form__left {
+    width: 300px;
+    h2 {
+      width: 300px;
+    }
+  }
+
+  .call__card {
+    width: 300px;
+    p {
+      width: 290px;
+      font-size: 13px;
+    }
+    input {
+      width: 275px;
+    }
+    .btn__modal {
+      width: 275px;
+    }
+    span {
+      width: 275px;
+    }
+    .call__close {
+      top: -11px;
+      right: -5px;
+    }
+  }
+
+  .modal-success {
+    width: 300px;
+
+    .success__btn {
+      top: -14px;
+      right: -6px;
+    }
+  }
+
+  .popular-modal__popup {
+    width: 300px;
+  }
+  .modal__row {
+    .tab__title {
+      width: 130.84px;
+      font-size: 14px;
+    }
+  }
+  .modal__btn {
+    width: 270px;
+  }
+
+  .application {
+    width: 300px;
+    height: 530px;
+    span {
+      p:first-child {
+        width: 170px;
+        font-size: 13px;
+        line-height: 17px;
+        margin-bottom: 17px;
+      }
+    }
+
+    form {
+      input {
+        width: 270px;
+      }
+      button {
+        width: 270px;
+      }
+    }
+    .p-bottom {
+      font-size: 10px;
+      font-weight: 400;
+      line-height: 15px;
+    }
+  }
+  .popup-link-1-close {
+    right: -10px;
+  }
+
+  .material__bg {
+    width: 300px;
+    h1 {
+      width: 290px;
+      font-size: 18px;
+    }
+    span {
+      width: 270px;
+      p {
+        width: 150px;
+        font-size: 16px;
+      }
+    }
+    .material__call {
+      width: 270px;
+    }
+    p {
+      width: 280px;
+    }
+  }
+  .material__input {
+    width: 270px;
   }
 }
