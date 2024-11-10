@@ -89,3 +89,70 @@ document.addEventListener("keydown", function (e) {
     popupClose(popupActive);
   }
 });
+
+const ZOOM_IMG = document.getElementById("popupImage");
+const ZOOM_POPUP = document.getElementById("popupZoom");
+const POPUP_ZOOM_LINKS = document.querySelectorAll(".popup-links-zoom");
+
+POPUP_ZOOM_LINKS.forEach((element) => {
+  element.addEventListener("click", function () {
+    let img = this.previousElementSibling;
+    ZOOM_IMG.src = img.src;
+    ZOOM_POPUP.style.display = "flex";
+    bodyLock();
+  });
+});
+
+ZOOM_POPUP.addEventListener("click", function (e) {
+  if (e.target === ZOOM_POPUP) {
+    ZOOM_POPUP.style.display = "none";
+    bodyUnLock();
+  }
+});
+const popupCloseZoom = document.querySelectorAll(".popupZoom_close");
+if (popupCloseZoom.length > 0) {
+  for (let index = 0; index < popupCloseZoom.length; index++) {
+    const el = popupCloseZoom[index];
+    el.addEventListener("click", function (e) {
+      ZOOM_POPUP.style.display = "none";
+      bodyUnLock();
+      e.preventDefault();
+    });
+  }
+}
+
+const MADE_IMG = document.getElementById("popupMadeImg");
+
+const MADE_POPUP = document.getElementById("popupMade");
+
+const popupMade = document.querySelectorAll(".popupMade-btn");
+const popupMade__body = document.getElementsByClassName("popupMade__body");
+popupMade.forEach((element) => {
+  element.addEventListener("click", function (e) {
+    e.preventDefault();
+    let img = this.previousElementSibling;
+    MADE_IMG.src = img.src;
+
+    MADE_POPUP.style.display = "flex";
+    bodyLock();
+  });
+});
+
+MADE_POPUP.addEventListener("click", function (e) {
+  if (e.target === MADE_POPUP) {
+    MADE_POPUP.style.display = "none";
+    bodyUnLock();
+  }
+});
+
+const popupCloseMade = document.querySelectorAll(".popupMade__close");
+if (popupCloseMade.length > 0) {
+  for (let index = 0; index < popupCloseMade.length; index++) {
+    const el = popupCloseMade[index];
+    el.addEventListener("click", function (e) {
+      MADE_POPUP.style.display = "none";
+      bodyUnLock();
+      e.preventDefault();
+    });
+  }
+}

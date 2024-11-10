@@ -28,5 +28,5 @@ tabsTitle.forEach((item) =>
 
 document.querySelector('[data-tab="tab-1"]').classList.add("active-tab");
 document.querySelector("#tab-1").classList.remove("hidden-tab-content");
-document.querySelector('[data-tab="tab-modal-1"]').classList.add("active-tab");
-document.querySelector("#tab-modal-1").classList.remove("hidden-tab-content");
+// document.querySelector('[data-tab="tab-modal-1"]').classList.add("active-tab");
+// document.querySelector("#tab-modal-1").classList.remove("hidden-tab-content");

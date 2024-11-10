@@ -83,7 +83,7 @@
     background-color: white;
   }
   .nav__item-img {
-    z-index: 3;
+    z-index: 0;
   }
 
   .nav__item-m {
